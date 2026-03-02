@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://pbmoqjvodepq"]
 
 [ext_resource type="Texture2D" uid="uid://08wuw8rw5mxk" path="res://assets/Characters/Knight_anin.png" id="1_3vyb7"]
-[ext_resource type="Script" uid="uid://cikm0sgul6rns" path="res://scenes/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://cikm0sgul6rns" path="res://scripts/player.gd" id="1_g2els"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3vyb7"]
 atlas = ExtResource("1_3vyb7")
@@ -61,7 +61,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ur7pv"]
-size = Vector2(13, 20)
+size = Vector2(13, 13)
 
 [node name="Player" type="CharacterBody2D" unique_id=1130548844]
 script = ExtResource("1_g2els")
@@ -74,5 +74,5 @@ frame = 1
 frame_progress = 0.8435256
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=98288690]
-position = Vector2(-0.5, -10)
+position = Vector2(-0.5, -6.5)
 shape = SubResource("RectangleShape2D_ur7pv")
